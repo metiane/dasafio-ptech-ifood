@@ -1,21 +1,21 @@
-import csv
-import os
+# import csv
+# import os
 
-def ler_transacoes():
-    """Função para ler as transações armazenadas no arquivo CSV."""
-    transacoes = []
-    if os.path.exists("transacoes.csv"):
-        with open("transacoes.csv", "r") as arquivo_csv:
-            leitor_csv = csv.reader(arquivo_csv)
-            for linha in leitor_csv:
-                transacoes.append(linha)
-    return transacoes
+# def ler_transacoes():
+#     """Função para ler as transações armazenadas no arquivo CSV."""
+#     transacoes = []
+#     if os.path.exists("transacoes.csv"):
+#         with open("transacoes.csv", "r") as arquivo_csv:
+#             leitor_csv = csv.reader(arquivo_csv)
+#             for linha in leitor_csv:
+#                 transacoes.append(linha)
+#     return transacoes
 
-def salvar_transacao(tipo, valor):
-    """Função para salvar uma transação no arquivo CSV."""
-    with open("transacoes.csv", "a", newline="") as arquivo_csv:
-        escritor_csv = csv.writer(arquivo_csv)
-        escritor_csv.writerow([tipo, valor])
+# def salvar_transacao(tipo, valor):
+#     """Função para salvar uma transação no arquivo CSV."""
+#     with open("transacoes.csv", "a", newline="") as arquivo_csv:
+#         escritor_csv = csv.writer(arquivo_csv)
+#         escritor_csv.writerow([tipo, valor])
 
 def depositar():
     """Operação de depósito."""
